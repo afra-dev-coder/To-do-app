@@ -1,0 +1,116 @@
+
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fbe7ef, #e9d5ff);
+}
+
+.container{
+    width: 335px;
+    background: #fff7fb;
+    border-radius: 22px;
+    box-shadow: 0 18px 35px rgba(236, 72, 153, 0.25);
+    padding-bottom: 15px;
+}
+
+ .header{
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 700;
+    color: #be185d;
+    padding: 18px;
+    border-bottom: 1.5px solid #f3c7da;
+}
+
+.addTask{
+    display: flex;
+    gap: 10px;
+    padding: 16px;
+}
+
+input{
+    flex: 1;
+    padding: 11px;
+    border-radius: 14px;
+    border: 1.5px solid #f3c7da;
+    outline: none;
+    font-size: 0.9em;
+    background: #ffffff;
+}
+
+input::placeholder{
+    color: #d63384;
+}
+
+input:focus{
+    border-color: #ec4899;
+    box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.2);
+}
+
+button{
+    background: linear-gradient(135deg, #ec4899, #f472b6);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: 0.25s ease;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(236, 72, 153, 0.45);
+}
+
+
+ul{
+    list-style: none;
+    padding: 10px 16px;
+    margin: 0;
+}
+
+li{
+    background: linear-gradient(135deg, #ffffff, #fde2f3);
+    border-radius: 16px;
+    padding: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #ec4899;
+    font-size: 0.95em;
+    color: #4a044e;
+    animation: fadeUp 0.25s ease;
+}
+
+li button{
+    background: linear-gradient(135deg, #fb7185, #f43f5e);
+    font-size: 0.75em;
+    padding: 6px 12px;
+    border-radius: 10px;
+}
+
+li button:hover{
+    box-shadow: 0 4px 10px rgba(244,63,94,0.4);
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
